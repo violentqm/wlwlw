@@ -1,0 +1,11 @@
+userkey = "https://raw.githubusercontent.com/MinecraftTester5151/dsaasdassad/main/whitelist"
+blacklist = "https://raw.githubusercontent.com/MinecraftTester5151/dsaasdassad/main/blacklist"
+key = game:HttpGet(userkey, true)
+banned = game:HttpGet(blacklist, true)
+plr = game.Players.LocalPlayer
+--f
+if string.find(key, plr.Name) then 
+ --script
+else
+    plr:Kick("Lol Bozo Not Whitelisted")
+end
